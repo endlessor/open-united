@@ -1,0 +1,29 @@
+.header-desktop {
+  display: none !important;
+}
+
+@media screen and (min-width: 1000px) {
+  .header-mobile {
+    display: none !important;
+  }
+
+  .header-desktop {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-mobile {
+    padding: 0 10px !important;
+  }
+}
+
+.d-flex-justify,
+.d-flex-justify .ant-form-item-control-input-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
